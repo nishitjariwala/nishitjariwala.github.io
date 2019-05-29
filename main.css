@@ -419,19 +419,13 @@ body
     }
 }*/
 /*Style For Gallery*/
-.gallery_background
-{
-    background: url(background_gallery.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover; 
-}
+
 .gallery
 {
     margin-left: 11%;
     width: 79%;
     margin-right: 10%;
-    height: 100vh;
+    height: 150vh;
    
 
 }
@@ -447,9 +441,113 @@ body
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4.5rem;
     color: blueviolet;
-    text-decoration: underline wavy white;
+   
 
 }
+
+.container {
+    margin-top: 10px;
+    
+    height: 200px;
+    width: 300px;
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    
+    height: 200px;
+    width: 300px;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    
+    height: 200px;
+    width: 300px;
+   
+    text-align: center;
+  }
+  .image
+  {
+      height: 200px;
+      width: 300px;
+  }
+  .container
+  { 
+    height: 200px;
+    width: 300px;
+
+  }
+  .text
+  {
+    height: 200px;
+    width: 300px;
+    margin-left: 15px;
+  }
+  .gallery
+  {
+      display: inline;
+  }
+  .col2
+  {
+      position: absolute;
+      margin-left: 550px;
+      margin-top: -863px;
+  }
+  .col3
+  {
+      position: absolute;
+      margin-left: 910px;
+      margin-top: -863px;
+  }
+@media screen and (max-width:860px) and (min-width:600px)
+{
+    .image
+    {
+        height: 100px;
+        width: 200px;
+    }
+} 
+@media screen and (max-width:600px)
+{
+    .col2{
+        display: none;
+    }
+    .col3
+    {
+        display: none;
+    }
+    .image
+    {
+        margin-left: 20%;
+    }
+    .text
+    {
+        margin-left: 15.2%;
+    }
+} 
+
+
 
 /* snackes */
 /*
@@ -783,4 +881,11 @@ body
   
   .round {
     border-radius: 50%;
+  }
+  @media screen and (max-width: 600px)
+  {
+      .cake_table1
+      {
+        margin-top: -500px;
+      }
   }
