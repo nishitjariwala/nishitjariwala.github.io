@@ -11,6 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body >
+        <div class="preloader">
+                <img src="Pacman-1s-200px.gif" alt="preloader" class="preloader_item">
+            </div>
             
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -124,11 +127,14 @@
 
         
         <script>
+
             $(document).ready(function () {
     $(document).on('click', '.cta', function () {
         $(this).toggleClass('active')
     })
 });
+
+//for Navigation Button
 function display_con() {
   var x = document.getElementById("con");
   if (x.style.display === "block") {
@@ -138,6 +144,10 @@ function display_con() {
     x.style.display = "block";
   }
 }
+//for Preloader
+window.addEventListener('load',function(){
+    document.querySelector('.preloader').style.display="none";
+})
         </script>
       
 </body>
