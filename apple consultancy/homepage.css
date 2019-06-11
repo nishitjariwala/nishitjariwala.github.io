@@ -2,10 +2,8 @@ html,
 body {
     height: 100%;
 }
-body
-{
 
-}
+
 /*preloader*/
 .preloader
 {
@@ -21,7 +19,10 @@ body
     align-items: center;
 }
 /*end od preloader*/
-
+.active
+{
+    text-decoration:underline red;
+}
 .logo
 {
     height: 40px;
@@ -179,7 +180,7 @@ p{padding:10px}
  */
 .animated {
   -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -195,6 +196,10 @@ p{padding:10px}
     transform: none;
   }
 }
+/*
+
+
+*/
 
 @keyframes fadeInRight {
   from {
@@ -219,4 +224,14 @@ p{padding:10px}
 {
     height: 80vh;
 }
-     
+.values
+{
+    background: gray;
+    
+}
+.world
+{
+    height: 300px;
+    
+}
+
