@@ -269,10 +269,7 @@ p{padding:10px}
   order: 1;
   text-align: center;
 }
-.card1
-{
-  width: 50%;
-}
+
 .container1 .box1:hover
 {
   flex: 2;
@@ -298,9 +295,17 @@ p{padding:10px}
   }
   .card
   {
-    margin-left: 30%;
+    margin-left: 5%;
   }
 }
+@media(min-width:768px) and (max-width:900px)
+{
+  .card-img
+  {
+     width:100px;
+  }
+}
+
 @media(min-width: 400px)
 {
   .card
@@ -350,35 +355,41 @@ p{padding:10px}
 }
 @media(min-width: 768px)
 {
-.social
-{
-  display: block;
-  border: #fd5581;
-  border-radius: 50px;
-  margin-top: 35vh;
-  margin-left: -2%;
-  position: absolute;
-  z-index: 10;
-  width: 80px;
-  height: 25vh;
-  background: #000;
-  position: fixed;
-}
-.unorder
-{
-  list-style: none;
-}
-.social_logo
-{
-  margin-top: 25px;
-  height: 30px;
-}
-.social_logo:hover{
-  height: 40px;
-}
-.social:hover
-{
-  width: 90px;
-  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
-}
+  .social
+  {
+    display: block;
+    border: #fd5581;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    margin-top: 35vh;
+    
+    position: absolute;
+    z-index: 10;
+    width: 60px;
+    height: 25vh;
+    background: #000;
+    position: fixed;
+  }
+  .unorder
+  {
+    list-style: none;
+  }
+  .social_logo
+  {
+    margin-left: -30px;;
+    margin-top: 25px;
+    height: 30px;
+  }
+  .social_logo:hover{
+    height: 40px;
+  }
+  .unorder:hover{
+    margin-left: 0;
+  }
+  .social:hover
+  {
+    width: 90px;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+  }
 }
