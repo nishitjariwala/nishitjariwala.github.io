@@ -336,10 +336,23 @@ p{padding:10px}
   color: white;
 }
 
-
-
+.social_logo
+{
+  margin-top: 25px;
+  height: 30px;
+}
+@media (max-width:767px)
+{
 .social
 {
+  display: none;
+}
+}
+@media(min-width: 768px)
+{
+.social
+{
+  display: block;
   border: #fd5581;
   border-radius: 50px;
   margin-top: 35vh;
@@ -367,4 +380,5 @@ p{padding:10px}
 {
   width: 90px;
   background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+}
 }
