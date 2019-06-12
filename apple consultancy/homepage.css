@@ -335,14 +335,7 @@ p{padding:10px}
   text-align: justify;
   color: white;
 }
-@media(max-width:768)
-{
-  .social
-  {
-    opacity: 0;
-  }
-  
-}
+
 
 
 .social
