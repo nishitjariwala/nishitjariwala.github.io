@@ -203,20 +203,23 @@ p{padding:10px}
 */
 
 @keyframes fadeInRight {
-  from {
+  from 
+  {
     opacity: 0;
     -webkit-transform: translate3d(100px, 0, 0);
     transform: translate3d(100px, 0, 0);
   }
 
-  to {
+  to
+  {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
 
-.fadeInRight {
+.fadeInRight 
+{
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
@@ -242,7 +245,8 @@ p{padding:10px}
   border: 2px solid black;
 }
 
-.container1 div{
+.container1 div
+{
  
   padding: 10px;
   color: white;
@@ -258,7 +262,8 @@ p{padding:10px}
   order: 2;
   text-align: center;
 }
-.box2{
+.box2
+{
   flex:1;
   order: 3;
   text-align: center;
@@ -286,6 +291,16 @@ p{padding:10px}
 {
   flex: 2;
 }
+
+.card-img-top
+{
+  width: 230px;
+}
+.card
+  {
+    margin-left: 5%;
+    width: 25rem;
+  }
 @media(min-width:768px)
 {
   .container1
@@ -293,17 +308,15 @@ p{padding:10px}
     display: flex;
     
   }
-  .card
-  {
-    margin-left: 5%;
-  }
+  
 }
 @media(min-width:768px) and (max-width:900px)
 {
-  .card-img
+  .card
   {
-     width:100px;
+    width: 20rem;
   }
+
 }
 
 @media(min-width: 400px)
@@ -321,7 +334,8 @@ p{padding:10px}
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
 
-.welcome{
+.welcome
+{
   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
   margin-top: -1.3%;
 }
