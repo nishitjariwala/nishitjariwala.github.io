@@ -162,6 +162,10 @@ html {
   }
   
   @media only screen and (max-width : 768px) {
+    p
+    {
+      font-size: 10px;
+    }
     section {
       grid-template-columns: 1fr;
     }
@@ -184,3 +188,30 @@ html {
       margin-bottom: 16px;
     }
   }
+
+  .banner_social-icon
+{
+  text-align: left;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: all 0.5s linear;
+}
+.banner_social-icon:hover
+{
+    background: yellow;
+    color: black;
+}
+.banner_icon
+{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem 2rem; 
+    grid-column-gap: 0.5rem;
+    justify-content: center;
+
+}
