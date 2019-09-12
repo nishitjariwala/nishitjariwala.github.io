@@ -220,12 +220,7 @@ html {
   background: orange;
 }
 
-.section-title
-{
-  background: lightblue;
-  margin-top: -13.5%;
-  margin-bottom: -13.5%;;
-}
+
 @media screen and (max-width: 600px)
 {
   div p
