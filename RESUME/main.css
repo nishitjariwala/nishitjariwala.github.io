@@ -63,9 +63,9 @@ html {
     font-size: 18px;
   }
   
-  /***********************************
-  * =Main Info
-  ***********************************/
+  
+   /*Main Info*/
+  
   
   img.avatar {
     width: 130px;
@@ -97,9 +97,8 @@ html {
     margin-right: 6px;
   }
   
-  /***********************************
-  * =Experience
-  ***********************************/
+  
+  /* Experience*/
   
   .job {
     padding-bottom: 24px;
@@ -123,9 +122,7 @@ html {
     line-height: 1.2;
   }
   
-  /***********************************
-  * =Skills
-  ***********************************/
+  /* Skills*/
   
   .skills-container {
     display: grid;
@@ -138,9 +135,7 @@ html {
     list-style-type: disc;
   }
   
-  /***********************************
-  * =Interests
-  ***********************************/
+  /* Interests*/
   
   .interests-container {
     display: flex;
@@ -152,9 +147,7 @@ html {
     opacity: 0.75;
   }
   
-  /***********************************
-  * =References
-  ***********************************/
+/*  References*/
   
   .reference {
     font-size: 18px;
