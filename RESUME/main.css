@@ -38,7 +38,11 @@ html {
     max-width: 960px;
     margin: 40px auto;
     padding: 32px;
-    background: white;
+    background: url('back.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: cover;
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -111,7 +115,7 @@ html {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
   
   .job-company {
@@ -125,7 +129,6 @@ html {
   
   .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin-bottom: 24px;
   }
@@ -217,7 +220,7 @@ html {
 }
 .sec1
 {
-  background: orange;
+  background: lightgray;
 }
 
 
