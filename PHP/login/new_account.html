@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>new Account</title>
+    <style>
+            a:active{
+                color: blue;
+    
+            }
+            a:visited
+            {
+                color: blue;
+                
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+            input
+                {
+                    width: 200px;
+                }
+                .t
+                {
+                    width: 40%;
+                }
+    
+        </style>
+</head>
+<body>
+    <h1>Create New Account</h1>
+    <table class="t">
+            
+            <tr>
+                    <td><a href="login.html">Log in</a></td>
+                    <td> <a href="forgot.html">  Forgot Password</a></td>
+                </tr>
+    
+</table>
+    <form action="new_account.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>
+                        <input type="text" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>date of birth</td>
+                    <td>
+                        <input type="date" name="date_of_birth" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td>
+                        <input type="text" name="m_no" required>
+                    </td>
+                </tr>
+                <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" name="email" required>
+                        </td>
+                    </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>User Information</legend>
+            <table>
+                <tr>
+                    <td>username</td>
+                    <td>
+                        <input type="text" name="uname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>
+                        <input type="password" name="password2" required>
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Account Recovery Option</legend>
+            <table>
+                    <tr>
+                            <td>
+                                choose Question 1
+                            </td>
+                            <td>
+                                <select name="question1" required>
+                                    <option value="1">What is your pet name?</option>
+                                    <option value="2">What is your fav. movie?</option>
+                                    <option value="3">what is your fav. colour?</option>
+                                    <option value="4">What is your fav Destination?</option>
+                                    <option value="5">What is your fav. Place?</option>
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter your Answer
+                            </td>
+                            <td>
+                                <input type="text" name="answer1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    choose Question 2
+                                </td>
+                                <td>
+                                    <select name="question2" required>
+                                        <option value="1">What is your pet name?</option>
+                                        <option value="2">What is your fav. movie?</option>
+                                        <option value="3">what is your fav. colour?</option>
+                                        <option value="4">What is your fav Destination?</option>
+                                        <option value="5">What is your fav. Place?</option>
+                                        
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Enter your Answer
+                                </td>
+                                <td>
+                                    <input type="text" name="answer2" required>
+                                </td>
+                            </tr>
+            </table>
+        </fieldset>
+        
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>g

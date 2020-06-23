@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            font-size:20px;
+        }
+        .personal input
+        {
+            width: 200px;
+            padding: 7px;
+        }
+        select{
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <form action="register.php" method="POST">
+        <fieldset class="personal"><legend> Personal information:</legend>
+            ID:-<br>
+            <input type="text" name="id" placeholder="id"><br>
+            
+            name:-<br>
+            <input type="text" name="name" placeholder="name"><br>
+            surname<br>
+            <input type="text" name="surname" placeholder="surname"><br>
+            lastname<br>
+            <input type="text" name="lastname" placeholder="Last name"><br>
+          
+        </fieldset>
+        <fieldset><legend>other</legend>
+            gender<br>
+            <input type="radio"  value="male" name="gender" >Male
+            <input type="radio"  name="gender" value="female" >Female
+            <br><br>
+            
+            city:-
+            <select name="city">
+        
+                    <option value="1">surat</option>
+                    <option value="2" selected>Anand</option>
+                    <option value="3">VVN</option>
+                </select>
+        </fieldset>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

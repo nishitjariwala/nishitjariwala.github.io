@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Account</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color: brown;
+            font-size: 3rem;
+        }
+        table
+        {
+            width: 40%;
+            margin-left: 35%;
+            /*text-align: right;*/
+        }
+        .submit
+        {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Account</h1>
+    <form action="new.php" method="POST">
+        <table>
+            <tr>
+                <td>  Enter Your Name:-</td>
+                <td><input type="text" name="fname" placeholder="Enter yorequiredur first name" required> </td>
+            </tr>
+            <tr>
+                <td>  Enter Your surname:-</td>
+                <td><input type="text" name="sname" placeholder="Enter your surname" required> </td>
+            </tr>
+            <tr>
+                <td>  Enter Your LastName:-</td>
+                <td><input type="text" name="lname" placeholder="Enter your Lastname" required> </td>
+            </tr>
+            <tr>
+                    <td>  Enter Your Birth Date:-</td>
+                    <td><input type="date" name="dob" required> </td>
+            </tr>
+            <tr>
+                <td>  Enter Your City:-</td>
+                <td><select name="city" required>
+                    <option value="anand">anand</option>
+                    <option value="ahemdabad">ahemdabad</option>
+                    <option value="surat" selected>surat</option>
+                    <option value="gandhinagar">Gandhinagar</option>
+                    <option value="rajkot">Rajkot</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Gender:-</td>
+                <td><input type="radio" name="gender" value="male" checked required>Male      <input type="radio" name="gender" value="female" >Female </td>
+            </tr>
+            
+            <tr>
+                <td>Enter Your User name:-</td>
+                <td><input type="text" name="uname" placeholder="Enter your Username" required> </td>
+            </tr>
+    
+            <tr>
+                <td>Enter Your password:-</td>
+                <td><input type="password" name="password" placeholder="Enter your password" required> </td>
+            </tr>
+            <tr>
+                <td>Confirm Your password:-</td>
+                <td><input type="password" name="con_password" placeholder="Enter your password"required > </td>
+            </tr>
+            <tr>
+                    <td  class="submit">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+        </table>
+    </form>
+</body>
+</html>

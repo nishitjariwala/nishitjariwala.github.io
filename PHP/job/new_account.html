@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Job</title>
+
+    </head>
+    <body>
+        <form action="new_Account.php"  method="POST" enctype="multipart/form-data">
+            
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <table>    
+                        <tr>
+                            <td>
+                                Enter Employee Id
+                            </td>
+                            <td><input type="text" name="id" required> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter Employee name
+                            </td>
+                            <td><input type="text" name="name" required> </td>
+                        </tr>
+                        <tr>
+                            <td> Enter Employee contact Number </td>
+                            <td><input type="text" name="num" pattern="[0-9]{10}" required> </td>
+                        </tr>
+                        <tr>
+                            <td> Enter Employee email Id </td>
+                            <td><input type="email" name="email"  required> </td>
+                        </tr>
+                        <td> Photo </td>
+                        <td> <input type="file" name="file"  >  </td>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Qualifications</legend>
+                    <table>
+                        <tr>
+                            <td>Select Your Last persued Degree</td>
+                            <td><input type="radio" name="degree" value="b-tech" checked>  B.Tech <br>
+                                <input type="radio" name="degree" value="b-com" >  B.Com <br>
+                                <input type="radio" name="degree" value="b-a" >  B.A <br> 
+                                <input type="radio" name="degree" value="10th" > 10th  <br>
+                                <input type="radio" name="degree" value="12th" >  12th  <br> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter Your CGPA or Percentage</td>
+                            <td> <input type="text" name="cgpa" required> </td>
+                        </tr>
+                       
+                        
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Status</legend>
+                    <table>
+                        <tr>
+                            <td>Your Role in Company</td>
+                            <td> 
+                                <select name="role">
+                                    <option value="1">Admin</option>
+                                    <option value="2">HR</option>
+                                    <option value="3">Manager</option>
+                                    <option value="4">Employee</option>
+                                </select> 
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Your Current Project ID </td>
+                            <td><input type="text" name="project_name" required></td>
+                        </tr>
+                        
+                    </table>
+                </fieldset>
+                <fieldset >
+                    <legend>Log in Details</legend>
+                    <table>
+                        <tr>
+                            <td>Enter Password</td>
+                            <td> <input type="password" name="pass1"> </td>
+                        </tr>
+                        <tr>
+                                <td>confirm Password </td>
+                                <td> <input type="password" name="pass2"> </td>
+                            </tr>
+                    </table>
+                </fieldset>
+            <table>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+            </table> 
+
+        </form>
+    </body>
+</html>
