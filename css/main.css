@@ -412,7 +412,8 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; } 
+  }
 
     @media screen and (max-width: 600px) {
       .menu-btn.close{
@@ -420,6 +421,10 @@ main {
         margin-top: 100%;
         display: none;
       }
+      .card:hover .content{
+        overflow-y: auto;
+      }
+      
     } 
 
 
@@ -477,7 +482,8 @@ main {
       left: 0;
       border-top-right-radius: 30%;
       scroll-behavior: smooth;
-      overflow: scroll;
+      overflow-y: auto;
+      /* overflow: scroll; */
 
     }
     .card:hover img {
@@ -490,6 +496,28 @@ main {
     .item{
       transition: all 2s ease-in-out;
     }
+
+    /* ScrollBar */
+    /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eece1a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+  cursor: alias;
+}
 
 
     /* contact form css */
