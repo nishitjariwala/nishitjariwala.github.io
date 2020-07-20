@@ -55,3 +55,9 @@ function showTab(s1,h1,h2,h3,h4){
   document.getElementById(h3).className = "not_activeBar";
   document.getElementById(h4).className = "not_activeBar";
 }
+
+// LOADER
+
+window.addEventListener('load',function(){
+  document.querySelector('.preloader').style.display="none";
+})
