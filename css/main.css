@@ -855,6 +855,19 @@ main {
   padding-top: 40vh;
   
 }
+.preloader
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: black;
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 .lds-hourglass:after {
   content: " ";
   display: block;
