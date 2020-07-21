@@ -153,7 +153,7 @@ body {
   
   body#bg-img {
     background: url(../img/background.jpg);
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)) ,url(../img/background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(../img/background.jpg);
 
     background-attachment: fixed;
     background-size: cover;
@@ -839,17 +839,16 @@ main {
 }
 
 
-#flutter div h2{
+#vue div h2{
   text-align: center;
   width: 100%;
 }
-#flutter div{
+#vue div{
   display: flex;
   width: 100%;
   border: 5px solid red;
   padding: 25px;
 }
-
 
 /* LOADER */
 .lds-hourglass {
@@ -899,4 +898,8 @@ main {
   100% {
     transform: rotate(1800deg);
   }
+}
+
+.imgbox img{
+  height: 250px;
 }
